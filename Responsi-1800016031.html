@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<link href="main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <div class="example">
+        <h3>Image Effects (Changing photo colors / Grayscale)</h3>
+
+        <div class="column1">
+            <input type="button" onclick="resetToGrayscale()" value="Grayscale" /><br />
+            <input type="button" onclick="resetToColored()" value="Colored" /><br />
+            <input type="button" onclick="reset()" value="Reset" /><br />
+            <input type="button" onclick="changeGrayValue(0.1)" value="Lighter" /><br />
+            <input type="button" onclick="changeGrayValue(-0.1)" value="Darker" /><br />
+            Red: <input type="button" onclick="changeColorValue('er', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('er', -10)" value="Less" /><br />
+            Green: <input type="button" onclick="changeColorValue('eg', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('eg', -10)" value="Less" /><br />
+            Blue: <input type="button" onclick="changeColorValue('eb', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('eb', -10)" value="Less" />
+        </div>
+        <div class="column2">
+            <canvas id="panel" width="520" height="700"></canvas>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+</html>
